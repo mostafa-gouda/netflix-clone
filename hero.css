@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  min-height: 115vh;
+  display: flex;
+  align-items: center;
+  background-image: url(https://occ-0-55-56.1.nflxso.net/dnm/api/v6/6AYY37jfdO6hpXcMjf9Yu5cnmO0/AAAABSYKXdtDmOOjabtoc7oF5OUZFbsnZm4526zCL3FYmYp4RDhCv9Mw8m7XS0ym2S1SG375NvilN-LYgk8V-sa21Un-qPx2.jpg?r=e04);
+  background-size: cover;
+  background-position: center top;
+  margin-bottom: 3rem;
+}
+
+@media screen and (max-width: 750px) {
+  .hero {
+    min-height: 100vh;
+  }
+}
+.hero::before {
+  z-index: 0;
+  position: absolute;
+  content: "";
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.hero > * {
+  z-index: 1;
+}
+
+.hero .container {
+  margin-bottom: 5rem;
+}
+.show-description {
+  font-size: clamp(1rem, 2vw, 1.5rem);
+  width: 40%;
+  min-width: 250px;
+  text-shadow: 2px 2px 0.2rem black;
+  margin-bottom: 2rem;
+}
+.cta {
+  display: flex;
+  gap: 1rem;
+}
+.cta .play {
+  display: flex;
+  align-items: center;
+  color: black;
+  font-weight: bold;
+  background-color: white;
+  padding: 0.2rem 1.2rem 0.2rem 0.6rem;
+  border-radius: 0.2rem;
+  gap: 0.5rem;
+}
+.cta .play .icon {
+  font-size: 2rem;
+}
+
+.cta .info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: rgba(128, 128, 128, 0.658);
+  padding: 0.2rem 1rem;
+  font-weight: bold;
+}

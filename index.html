@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link
+    href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="variables.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <link rel="stylesheet" href="typography.css" />
+  <link rel="stylesheet" href="nav.css" />
+  <link rel="stylesheet" href="hero.css" />
+  <link rel="stylesheet" href="carousel.css" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <title>Home - Netflix</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+    .container {
+      width: 94%;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container container-nav">
+      <span class="material-icons mobile menu-btn"> menu </span>
+      <div class="logo-wrapper">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png" alt="netflix" class="logo" />
+      </div>
+      <input class="mobile-search mobile" type="text" placeholder="Search" />
+      <nav>
+        <div class="mobile-account mobile">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" class="avatar" />
+          <ul>
+            <li><a href="">Manage Profiles</a></li>
+            <li><a href="">Account</a></li>
+            <li><a href="">Help Center</a></li>
+            <li><a href="">Sign Out of Netflix</a></li>
+          </ul>
+        </div>
+        <div class="line mobile"></div>
+        <ul>
+          <li class="nav-item active"><a>Home</a></li>
+          <li class="nav-item"><a href="">TV Shows</a></li>
+          <li class="nav-item"><a href="">Movies</a></li>
+          <li class="nav-item"><a href="">New & Popular</a></li>
+          <li class="nav-item"><a href="">My List</a></li>
+        </ul>
+      </nav>
+      <div class="nav-side-options desktop">
+        <div class="search">
+          <span class="material-icons icon"> search </span>
+          <input type="text" placeholder="Titles,people,genres" />
+        </div>
+        <a href="" class="netflix-kids">Kids</a>
+        <div class="notifications">
+          <span class="material-icons"> notifications </span>
+          <p class="details">No recent notifications</p>
+        </div>
+        <div class="account">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png" alt="" class="avatar" />
+          <span class="material-icons icon"> arrow_drop_down </span>
+          <div class="drop-down">
+            <ul>
+              <li><a href="">Manage Profiles</a></li>
+              <div class="line"></div>
+              <li><a href="">Account</a></li>
+              <li><a href="">Help Center</a></li>
+              <li><a href="">Sign Out of Netflix</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="show-logo">
+          <img
+            src="https://occ-0-55-56.1.nflxso.net/dnm/api/v6/LmEnxtiAuzezXBjYXPuDgfZ4zZQ/AAAABZEaRXEOr58qNtC24yPYdI5OwOOOLxGGlHoUUUzZ4_gOwdehsS8KCuhth5t4zGmtkhXVpnPXezQYHaluNqOjcnynjrtK5_QTgqZx.png?r=295"
+            alt="" />
+        </div>
+        <p class="show-description">
+          A high school chemistry teacher dying of cancer teams with a former
+          student to secure his family's future by manufacturing and selling
+          crystal meth.
+        </p>
+        <div class="cta">
+          <a href="" class="play">
+            <span class="material-icons icon"> play_arrow </span>
+            Play
+          </a>
+          <a href="" class="info">
+            <span class="material-icons-outlined"> info </span>
+            More Info
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="shows">
+      <div class="container">
+        <div class="category netflixOriginals">
+          <h1>Popular On Netflix</h1>
+          <div class="carousel-wrapper">
+            <span class="arrow prev">
+              <span class="material-icons-outlined">arrow_back_ios</span>
+            </span>
+            <ul class="carousel"></ul>
+            <span class="arrow next">
+              <span class="material-icons-outlined">arrow_forward_ios</span>
+            </span>
+          </div>
+        </div>
+        <div class="category trending">
+          <h1>Trending Now</h1>
+          <div class="carousel-wrapper">
+            <span class="arrow prev">
+              <span class="material-icons-outlined">arrow_back_ios</span>
+            </span>
+            <ul class="carousel"></ul>
+            <span class="arrow next">
+              <span class="material-icons-outlined">arrow_forward_ios</span>
+            </span>
+          </div>
+        </div>
+        <div class="category topRated">
+          <h1>Top Rated</h1>
+          <div class="carousel-wrapper">
+            <span class="arrow prev">
+              <span class="material-icons-outlined">arrow_back_ios</span>
+            </span>
+            <ul class="carousel"></ul>
+            <span class="arrow next">
+              <span class="material-icons-outlined">arrow_forward_ios</span>
+            </span>
+          </div>
+        </div>
+        <div class="category action">
+          <h1>Action Movies</h1>
+          <div class="carousel-wrapper">
+            <span class="arrow prev">
+              <span class="material-icons-outlined">arrow_back_ios</span>
+            </span>
+            <ul class="carousel"></ul>
+            <span class="arrow next">
+              <span class="material-icons-outlined">arrow_forward_ios</span>
+            </span>
+          </div>
+        </div>
+        <div class="category comedy">
+          <h1>Comedy Movies</h1>
+          <div class="carousel-wrapper">
+            <span class="arrow prev">
+              <span class="material-icons-outlined">arrow_back_ios</span>
+            </span>
+            <ul class="carousel"></ul>
+            <span class="arrow next">
+              <span class="material-icons-outlined">arrow_forward_ios</span>
+            </span>
+          </div>
+        </div>
+        <div class="category romance">
+          <h1>Romance Movies</h1>
+          <div class="carousel-wrapper">
+            <span class="arrow prev">
+              <span class="material-icons-outlined">arrow_back_ios</span>
+            </span>
+            <ul class="carousel"></ul>
+            <span class="arrow next">
+              <span class="material-icons-outlined">arrow_forward_ios</span>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container"></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+
+</html>

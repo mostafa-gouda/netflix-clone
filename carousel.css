@@ -1,0 +1,90 @@
+.shows {
+  background-image: linear-gradient(
+    180deg,
+    transparent 0%,
+    var(--bg-color) 15%
+  );
+  transform: translateY(-13rem);
+  /* margin-top: -13rem; */
+}
+
+.category {
+  margin-bottom: 3rem;
+}
+
+.category h1 {
+  margin-bottom: 1rem;
+}
+.carousel-wrapper {
+  position: relative;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel {
+  display: flex;
+  position: relative;
+  overflow-x: scroll;
+  overflow-y: visible;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  list-style: none;
+  scroll-behavior: smooth;
+  scroll-padding: 0 2.5% 0 2.5%;
+}
+
+.carousel-item {
+  box-sizing: border-box;
+  min-width: 16.8%;
+  padding-right: 0.6%;
+  transition: all 0.5s ease-in-out;
+}
+
+img {
+  display: block;
+  border-radius: 0.3rem;
+  max-width: 100%;
+}
+
+.arrow {
+  background-color: rgba(0, 0, 0, 0.555);
+  z-index: 1;
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+.next {
+  right: 0;
+}
+
+.back {
+  left: 0;
+}
+
+@media screen and (max-width: 1100px) {
+  .carousel-item {
+    min-width: 25.2%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .carousel-item {
+    min-width: 33.5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .carousel-item {
+    min-width: 50.5%;
+  }
+}

@@ -1,0 +1,209 @@
+.mobile {
+  display: none;
+}
+
+header {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  width: 100%;
+  background-image: linear-gradient(180deg, #141414, transparent);
+  transition: all 0.3s linear;
+  padding: 1rem 0;
+}
+header.scrolled {
+  background-color: #141414;
+}
+
+.container-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 80px;
+  margin-right: 2rem;
+}
+
+nav {
+  flex-grow: 1;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.nav-item {
+  display: flex;
+}
+.nav-item::before {
+  content: "";
+}
+
+nav ul .nav-item:hover {
+  color: grey;
+}
+
+nav ul .active {
+  cursor: default;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-side-options {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  padding: 2px;
+}
+
+.search.active-search {
+  background-color: black;
+  border: 1px solid white;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.search input {
+  width: 0;
+  margin-left: 0.6rem;
+  background-color: transparent;
+  border: none;
+  transition: all 0.2s linear;
+}
+
+.active-search input {
+  width: 200px;
+}
+
+.netflix-kids {
+  padding-bottom: 4px;
+}
+.notifications {
+  position: relative;
+}
+.notifications .details {
+  opacity: 0;
+  position: absolute;
+  text-align: center;
+  width: 200px;
+  background-color: black;
+  border-top: 2px solid white;
+  padding: 40px 80px;
+  right: 0;
+  top: 150%;
+  transition: all 0.2s linear;
+}
+
+.notifications .details::before {
+  content: "";
+  position: absolute;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid white;
+  z-index: -1;
+  top: -8px;
+  right: 7px;
+}
+
+.notifications:hover .details {
+  opacity: 1;
+}
+.account {
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.account .icon {
+  transition: all 0.2s linear;
+}
+.account .drop-down {
+  display: none;
+  width: 150px;
+  padding: 1rem 0 1rem 1rem;
+  position: absolute;
+  background-color: black;
+  top: 100%;
+  right: 0;
+}
+.drop-down li {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+.line {
+  background-color: grey;
+  height: 1px;
+  width: 110%;
+  margin-left: -10%;
+  margin-bottom: 1rem;
+}
+.account:hover .icon {
+  transform: rotate(180deg);
+}
+.account:hover .drop-down {
+  display: block;
+}
+.avatar {
+  width: 30px;
+  border-radius: 0.2rem;
+}
+
+@media screen and (max-width: 750px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
+    display: block;
+  }
+  header {
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  .container-nav .logo-wrapper {
+    flex-grow: 1;
+    margin-left: 1rem;
+  }
+  .mobile-search {
+    padding: 0.2rem 0rem 0.2rem 0.5rem;
+    background-color: rgb(44, 44, 44);
+    border: 1px solid white;
+  }
+  .mobile-account img {
+    width: 50px;
+    margin-bottom: 1rem;
+  }
+  .mobile-account li {
+    margin-bottom: 1rem;
+  }
+  nav {
+    display: none;
+    order: 0;
+    position: fixed;
+    left: 0;
+    top: 7%;
+    height: 100vh;
+    width: 60vw;
+    background-color: var(--bg-color);
+    padding: 2rem 0 0 1rem;
+  }
+  .main-open-menu {
+    filter: contrast(80%);
+  }
+  nav ul {
+    display: block;
+  }
+  .nav-item {
+    margin-bottom: 1rem;
+  }
+}
